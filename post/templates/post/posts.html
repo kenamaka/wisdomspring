@@ -1,0 +1,399 @@
+{% extends "post/layout.html" %}
+{% load static %}
+
+   {% block content %}
+   <header class="header">
+    <div class="topbar clearfix">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-md-6 col-sm-6 text-left">
+                    <p>
+                        <strong><i class="fa fa-phone"></i></strong>  +234 803 314 0013 &nbsp;&nbsp;
+                        <strong><i class="fa fa-envelope"></i></strong> <a href="mailto:#">info@wisdomspringacademy.com</a>
+                    </p>
+                </div><!-- end left -->
+                <div class="col-md-6 col-sm-6 hidden-xs text-right">
+                    <div class="social">
+                        <a class="facebook" href="#" data-tooltip="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              
+                        <a class="twitter" href="#" data-tooltip="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a class="google" href="#" data-tooltip="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a class="linkedin" href="#" data-tooltip="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a class="pinterest" href="#" data-tooltip="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                    </div><!-- end social -->
+                </div><!-- end left -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end topbar -->
+
+    <div class="container">
+        <nav class="navbar navbar-default yamm">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo-normal">
+                    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'post/images/logo.png' %}" alt=""></a>
+                </div>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'admission' %}">Admission</a>
+                    <li><a href="{% url 'events' %}">Events</a></li>
+                    <li><a href="{% url 'blogpage' %}">Blog</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'prospects' %}">Our Propects</a></li>
+                                                
+                </ul>
+            </div>
+        </nav><!-- end navbar -->
+    </div><!-- end container -->
+</header>
+
+<section id="home" class=" video-section js-height-full">
+    <div class="overlay">
+    <div class="home-text-wrapper relative container">
+        <div class="home-message">
+            <p><span class="typed-words"></span></p>
+            <small>We are delighted that you are interested in Wisdom Spring foundation Academy.We provide a broad-based education of international standard, based on Christian principles and values.</small>
+            <div class="btn-wrapper">
+                <div class="text-center">
+                    <a href="#about" class="btn btn-primary wow slideInLeft">Read More</a> &nbsp;&nbsp;&nbsp;<a href="{% url 'contact' %}"" class="btn btn-default wow slideInRight">Contact Us</a>
+                </div>
+            </div><!-- end row -->
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="section">
+    <div id="about"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 hidden-sm hidden-xs">
+                <div class="custom-module">
+                    <img src="{% static 'post/upload/body.jpg' %}" alt="" class="img-responsive wow slideInLeft">
+                </div><!-- end module -->
+            </div><!-- end col -->
+            <div class="col-md-6">
+                <div class="custom-module p40l">
+                    <h2>We are a Christian school designed to provide an exciting learning environment for children between the ages of 3 months – 11 years.<br>
+                    </h2>
+
+                    <p>We provide a broad-based education of international standard to prepare children for college.<br>
+                        WSFA is committed to
+Teaching children Christian success principles and values
+Providing a stimulating and caring environment
+Encouraging children to achieve their full potential
+Providing a curriculum that taps into the depth and delivery method of the British Curriculum and the wealth of the Nigerian Curriculum
+Partner with parents in each child’s learning journey
+
+                    </p>
+
+                    <hr class="invis">
+
+                    <hr class="invis">
+
+                    <div class="btn-wrapper">
+                        <a href="{% url 'contact' %}" class="btn btn-primary">Learn More About us</a>
+                    </div>
+
+                </div><!-- end module -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+
+<section class="section gb">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Our Sessions</h3>
+            <p>Each child is provided the opportunity to receive high quality education that caters for their diverse intellectual needs, with a stimulating and caring environment</p>
+        </div><!-- end title -->
+
+        <div id="owl-01" class="owl-carousel owl-theme owl-theme-01">
+            <div class="caro-item">
+                <div class="course-box">
+                    <div class="image-wrap entry">
+                        <img src="{% static 'post/upload/creche.jpg' %}" alt="" class="img-responsive">
+                        <div class="magnifier">
+                             <a href="{% url 'admission' %}" title=""><i class="flaticon-add"></i></a>
+                        </div>
+                    </div><!-- end image-wrap -->
+                    <div class="course-details">
+                        <h4>
+                            <small>Creche</small>
+                            <a href="{% url 'admission' %}" title="">Learn more</a>
+                        </h4>
+                        <p>The early years and elementary education determines a child’s educational journey.</p>
+                    </div><!-- end details -->
+                   </div><!-- end box -->
+            </div><!-- end col -->
+
+            <div class="caro-item">
+                <div class="course-box">
+                    <div class="image-wrap entry">
+                        <img src="{% static 'post/upload/pe-nursery.jpg' %}" alt="" class="img-responsive">
+                        <div class="magnifier">
+                             <a href="{% url 'admission' %}" title=""><i class="flaticon-add"></i></a>
+                        </div>
+                    </div><!-- end image-wrap -->
+                    <div class="course-details">
+                        <h4>            <small>Pre-Nursery</small>
+                            <a href="{% url 'admission' %}" title="">Learn more</a>
+                        </h4>
+                        <p>Encouraging children to discover and achieve their full pontentials. </p>
+                    </div><!-- end details -->
+                </div><!-- end box -->
+            </div><!-- end col -->
+
+            <div class="caro-item">
+                <div class="course-box">
+                    <div class="image-wrap entry">
+                        <img src="{% static 'post/upload/nursery.jpg' %}" alt="" class="img-responsive">
+                        <div class="magnifier">
+                             <a href="{% url 'admission' %}" title=""><i class="flaticon-add"></i></a>
+                        </div>
+                    </div><!-- end image-wrap -->
+                    <div class="course-details">
+                        <h4>
+                            <small>Nursery</small>
+                            <a href="{% url 'admission' %}" title="">Learn more</a>
+                        </h4>
+                        <p>Teach pupils to be good citizens, with a sense of care and responsibility.</p>
+                    </div><!-- end details -->
+                    </div><!-- end box -->
+            </div><!-- end col -->
+
+            <div class="caro-item">
+                <div class="course-box">
+                    <div class="image-wrap entry">
+                        <img src="{% static 'post/upload/primary-school.jpg' %}" alt="" class="img-responsive">
+                        <div class="magnifier">
+                             <a href="{% url 'admission' %}" title=""><i class="flaticon-add"></i></a>
+                        </div>
+                    </div><!-- end image-wrap -->
+                    <div class="course-details">
+                        <h4>
+                            <small>Primary</small>
+                            <a href="{% url 'admission' %}" title="">Learn more</a>
+                        </h4>
+                        <p>Every child is observed daily to record achievements, interests , milestones and progress.</p>
+                    </div><!-- end details -->
+                    </div><!-- end box -->
+            </div><!-- end col -->
+
+            <div class="caro-item">
+                <div class="course-box">
+                    <div class="image-wrap entry">
+                        <img src="{% static 'post/upload/spell.jpg' %}" alt="" class="img-responsive">
+                        <div class="magnifier">
+                             <a href="{% url 'admission' %}" title=""><i class="flaticon-add"></i></a>
+                        </div>
+                    </div><!-- end image-wrap -->
+                    <div class="course-details">
+                        <h4>
+                            <small>Secondary</small>
+                            <a href="{% url 'admission' %}" title="">Learn more</a>
+                        </h4>
+                        <p>Teaching children christian success principles, Go and values.</p>
+                    </div><!-- end details -->
+                    </div><!-- end box -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+
+        <hr class="invis">
+
+    </div><!-- end container -->
+</section>
+
+<section class="section db p120"style="background-color:  #002133;">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tagline-message text-center">
+                    <h3>Upcoming Activities This Term</h3>
+                    <p>Education is not the learning of facts, but the training of the mind to think.</p>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end section -->
+
+   <section class="section gb nopadtop">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box m30">
+                    <div class="image-wrap entry">
+                        {% if event1.image %}
+                        <img src="{{ event1.image.url }}" alt="" class="img-responsive">
+                        {% endif %}
+                        
+                    </div><!-- end image-wrap -->
+                    <h4> {{ event1.title }}</h4>
+                    <p> {{ event1.snipet}}</p>
+                    <a href="{% url 'events' %}" class="readmore">View more</a>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-md-6">
+                <div class="box m30">
+                    <div class="image-wrap entry">
+                        {% if event2.image %}
+                        <img src="{{ event2.image.url }}" alt="" class="img-responsive">
+                        {% endif %}
+                       
+                    </div><!-- end image-wrap -->
+                    <h4> {{ event2.title }}</h4>
+                    <p> {{ event2.snipet }}</p>
+                    <a href="{% url 'events' %}" class="readmore">View more</a>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-md-3">
+                <div class="box m30">
+                    <div class="image-wrap entry">
+                        {% if event3.image %}
+                        <img src="{{ event3.image.url }}" alt="" class="img-responsive">
+                        {% endif %}
+                                            </div><!-- end image-wrap -->
+                    <h4> {{ event3.title}}</h4>
+                    <p> {{ event3.snipet }}</p>
+                    <a href="{% url 'events' %}" class="readmore">View more</a>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+
+        <hr class="invis">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="image-wrap entry">
+                        {% if event4.image %}
+                        <img src="{{ event4.image.url }}" alt="" class="img-responsive">
+                        {% endif %}
+                        
+                    </div><!-- end image-wrap -->
+                    <h4> {{ event4.title}}</h4>
+                    <p> {{ event4.snipet}}</p>
+                    <a href="{% url 'events' %}" class="readmore">View more</a>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="image-wrap entry">
+                        {% if event5.image %}
+                        <img src="{{ event5.image.url }}" alt="" class="img-responsive">
+                        {% endif %}
+                       
+                    </div><!-- end image-wrap -->
+                    <h4> {{ event5.title }}</h4>
+                    <p>  {{ event5.snipet }}</p>
+                    <a href="{% url 'events' %}" class="readmore">View more</a>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Testimonials</h3>
+            <p>WSFA is the best, from grooming to Teaching children christian success principles and values</p>
+        </div><!-- end title -->
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box testimonial">
+                    <p class="testiname"><strong><img src="" alt="" class="img-circle"> John Okonkwo</strong></p>
+                    <p>WSFA is the best, from grooming to Teaching children christian success principles and values</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div><!-- end testimonial -->
+            </div><!-- end col -->
+
+            <div class="col-md-4">
+                <div class="box testimonial">
+                    <p class="testiname"><strong><img src="" alt="" class="img-circle"> Rita Dewale</strong></p>
+                    <p>WSFA is the best, from grooming to Teaching children christian success principles and values</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div><!-- end testimonial -->
+            </div><!-- end col -->
+
+            <div class="col-md-4">
+                <div class="box testimonial">
+                    <p class="testiname"><strong><img src="" alt="" class="img-circle"> Adamu Maigida</strong></p>
+                    <p>WSFA is the best, from grooming to Teaching children christian success principles and values</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div><!-- end testimonial -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+
+<section class="section gb">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Recent News</h3>
+            <p> As a Christian School, we seek to help children develop a solid foundation, achieve their full potential in a stimulating and caring environment thereby making a positive impact on their generation. Stay in touch with latest new update.</p>
+        </div><!-- end title -->
+        <div class="row">
+    {% for post in Posts %}
+    <div class="col-lg-4 col-md-12">
+        <div class="blog-box">
+            
+            <div class="image-wrap entry">
+                {% if post.image %}               
+                <img src="{{ post.image.url }}"  class="img-responsive" style="width: 400px; height: 250px;">
+            
+                {% endif %}
+
+            </div><!-- end image-wrap -->
+            
+
+            <div class="blog-desc">
+                <h4><a href="{% url 'postpage' post.title %}">{{post.title}}</a></h4>
+                <p>{{post.snipet}}</p>
+            </div><!-- end blog-desc -->
+
+            <div class="post-meta">
+                <ul class="list-inline">
+                    <li><a href=""><i class="fa fa-clock-o"></i> {{post.create_time}}</a></li>
+                    <li><a href=""><i class="fa fa-user"></i>>By Admin</a></li>
+                    </ul>
+            </div><!-- end post-meta -->
+        </div><!-- end blog -->
+    </div><!-- end col -->
+    {% endfor %}
+</div><!-- end row -->
+</div><!-- end row -->
+</div><!-- end container -->
+</section>
+
+   {% endblock %}
+    

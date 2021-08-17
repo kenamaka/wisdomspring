@@ -1,0 +1,67 @@
+{% extends "post/dashlay.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<h2>Users</h2>
+                    <table class="table table-sm " width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                 <th>Username</th>
+                <th>Email</th>
+                <th>Date Created</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for users in userlist %}
+            <tr>
+                <td>{{users.first_name}} &nbsp; {{users.second_name}}</td>
+                <td>{{users.username}}</td>
+                <td>{{users.email}}</td>
+                <td>{{users.create_time }}</td>
+                <td><a class="btn btn-info" href="#" style="width: 100px;;">Edit</a></td>
+                <td><a class="btn btn-danger" href="#" style="width: 100px;;">Delete</a></td>
+            </tr>
+              {% endfor %}                             
+        </tbody>
+    </table>
+    <h2>Applicants</h2>
+        <table class="table table-sm " width="100%" cellspacing="0">
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Position</th>
+    <tn>Department</tn>
+    <th>Cv</th>
+    <th>Date Created</t
+    <th>Edit</th>
+    <th>Delete</th>
+</tr>
+</thead>
+<tbody>
+{% for users in applylist %}
+<tr>
+    <td>{{users.first_name}} &nbsp; {{users.second_name}}</td>
+    <td>{{users.email}}</td>
+    <td>{{ users.postition }}</td>
+    <td>{{users.department}}</td>
+    <td>
+    <a href=" {{ users.pdf.url }}" class="btn btn-primary btn-sm" >Download CV</a>
+    </td>
+    <td>{{ users.create_time }}</td>
+    <td><a class="btn btn-info" href="#" style="width: 100px;;">Edit</a></td>
+    <td><a class="btn btn-danger" href="#" style="width: 100px;;">Delete</a></td>
+</tr>
+  {% endfor %}                             
+</tbody>
+</table>>
+    
+
+
+
+{% endblock %}

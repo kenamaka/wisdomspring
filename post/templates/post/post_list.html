@@ -1,0 +1,36 @@
+{% extends "post/dashlay.html" %}
+{% load static %}
+
+{% block content %}
+
+<h2>Posts</h2>
+                
+<table class="table table-sm " width="100%" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for posts in postlist %}
+        <tr>
+            <td>{{posts.title}}</td>
+            <td>Admin</td>
+            <td>{{ posts.category }}</td>
+            <td>{{ posts.create_time }}</td>
+            <td><a class="btn btn-info" href="" style="width: 100px;;">Edit</a></td>
+            <td><a class="btn btn-danger" href="#" style="width: 100px;;">Delete</a></td>
+        </tr>
+          {% endfor %}                             
+    </tbody>
+</table>
+    
+
+
+
+{% endblock %}

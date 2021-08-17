@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html> 
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Site Meta -->
+    <title>Wisdom Spring Academy &mdash;  a co-educational pre-school and elementary Christian </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'post/images/favicon.png' %}" type="image/x-icon" />
+
+    <link rel="apple-touch-icon" href="{% static 'post/images/apple-touch-icon.png' %}">
+
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet"> 
+	
+    <!-- Custom & Default Styles -->
+	<link rel="stylesheet" href="{% static 'post/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'post/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'post/css/carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'post/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'post/style.css' %}">
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>  
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <img class="preloader" src="{% static 'post/images/loader.gif' %}" alt="">
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    {% block content %}
+
+    {% endblock %}
+    <footer class="section footer noover">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="widget clearfix">
+                        <h3 class="widget-title">Subscribe Our Newsletter</h3>
+                        <div class="newsletter-widget">
+                            <p>You can opt out of our newsletters at any time</p>
+                            <form class="form-inline" role="search">
+                                <div class="form-1">
+                                    <input type="text" class="form-control" placeholder="Enter email here..">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane-o"></i></button>
+                                </div>
+                            </form>
+                        </div><!-- end newsletter -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+        
+                <div class="col-lg-4 col-md-12">
+                    <div class="widget clearfix">
+                        <h3 class="widget-title"></h3>
+                        <p>Would you like to earn your profits by joining our team? Join us without losing time.</p>
+                        <a href="{% url 'apply' %}"" class="readmore">Became a Staff Member</a>
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+        
+                <div class="col-lg-4 col-md-12">
+                    <div class="widget clearfix">
+                        <h3 class="widget-title">Popular Tags</h3>
+                        <div class="tags-widget">   
+                            <ul class="list-inline">
+                                <li><a href="#">Our School</a></li>
+                                <li><a href="#">Our Vision</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Nursery Rhymes</a></li>
+                                <li><a href="#">Baby songs</a></li>
+                                <li><a href="#">Guiding Principles</a></li>
+                                <li><a href="#">Admission</a></li>
+                                <li><a href="#">Our Prospects</a></li>
+                                <li><a href="#">Speech and Prize Day</a></li>
+                                <li><a href="#">WSA Founder’s Message</a></li>
+                            </ul>
+                        </div><!-- end list-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+        
+            </div><!-- end row -->
+        </div><!-- end container -->
+        </footer><!-- end footer -->
+        
+        <div class="copyrights">
+        <div class="container">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <div class="cop-logo">
+                        <a href="#"><img src="{% static 'post/images/logo.png' %}" alt=""></a>
+                    </div>
+                </div>
+        
+                <div class="pull-right">
+                    <div class="footer-links">
+                        <ul class="list-inline">
+                            <li><a>Powered by Cissoft</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end container -->
+        </div><!-- end copy -->
+        </div>
+        
+       
+    <!-- end wrapper -->
+    <!-- jQuery Files -->
+    <script src="{% static 'post/js/jquery.min.js' %}"></script>
+    <script src="{% static 'post/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'post/js/carousel.js' %}"></script>
+    <script src="{% static 'post/js/animate.js' %}"></script>
+    <script src="{% static 'post/js/custom.js' %}"></script>
+    <!-- VIDEO BG PLUGINS -->
+    
+    <script src="{% static 'post/js/videobg.js ' %}"></script>
+    <script src="{% static 'post/js/typed.js' %}"></script>
+    <script>
+        jQuery(document).ready(function($) {
+                var Video_back = new video_background($("#home"), { 
+                    "position": "absolut4nB2RQe", //Follow page scroll
+                    "z-index": "-1",        //Behind everything
+                    "loop": true,           //Loop when it reaches the end
+                    "autoplay": true,       //Autoplay at start
+                    "muted": true,          //Muted at start
+                    "mp4":"{% static 'post/upload/preview.mp4' %}" ,     //Path to video mp4 format
+                    "ogg":"{% static 'post/upload/preview.ogg' %}" ,     //Path to video ogg format
+                    "webm":"{% static 'post/upload/preview.webm' %}" ,     //Path to video webm format
+                    "video_ratio": 0,              // width/height -> If none provided sizing of the video is set to adjust
+                    "fallback_image": "images/dummy.png",   //Fallback image path
+//Priority for html5 (if set to flash and tested locally will give a flash security error)
+                });
+            });
+    </script>
+            <script>
+            var typed = new Typed('.typed-words', {
+            strings: ["Delivering Quality Education","With an Unmatched Approach","Unique Methods","Activity Based Learning"," Exciting Learning Environment"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+            });
+            </script>
+
+  </body>
+</html>
